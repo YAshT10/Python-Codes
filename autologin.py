@@ -6,9 +6,9 @@ driver = webdriver.Edge()
 
 driver.get('http://netaccess.iitm.ac.in/account/login')
 username = driver.find_element(By.ID, 'username')
-username.send_keys('CS22B088')
+username.send_keys('')#username
 password = driver.find_element(By.ID, 'password')
-password.send_keys('h["V-9Gl.4{')
+password.send_keys('')#passcode
 password.submit()
 driver.get('https://netaccess.iitm.ac.in/account/approve')
 button = driver.find_element(By.XPATH, "/html/body/div[2]/div/div[1]/form/div[2]/label/input")
